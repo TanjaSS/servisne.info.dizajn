@@ -23,15 +23,59 @@ body {
 	padding: .5em;
 }
 
+.steps-explainer {
+	margin-top: 60px;
+}
+
+.step-explainer img {
+	visibility: hidden;
+}
+
+.step-1-explainer {
+	background: url(../slike/korak1-bw.jpg) no-repeat;
+}
+
+.step-1-explainer:hover {
+	background: url(../slike/korak1.jpg) no-repeat;
+}
+
+.step-2-explainer {
+	background: url(../slike/korak2-bw.jpg) no-repeat;
+}
+
+.step-2-explainer:hover {
+	background: url(../slike/korak2.jpg) no-repeat;
+}
+
+.step-explainer {
+	padding: 12px;
+	border: 1px solid #b1b1b1;
+	border-radius: 10px;
+	background-color: #ececec;
+	background-position: 12px 12px;
+	display: inline-block;
+}
+
+.step-explainer:hover {
+	background-color: #ececec;
+	background-position: 12px 12px;
+}
+
 h2 {
 	color: #AD235E;
 }
 
 div.container .btn-primary {
 	background-color: #7D9C9F;
-	color: 	#ECECEC;
+	color: #ECECEC;
 	border: 0;
 	margin-top: 30px;
+}
+
+.btn-huge {
+	padding: 10px 50px;
+	font-size: 3em;
+	border-radius: 20px;
 }
 
 .latest-info ul {
@@ -75,4 +119,8 @@ form {
 	display: table-cell;
 	vertical-align: middle;
 	font-size: 2.5em;
+}
+
+.text-centered {
+	text-align: center;
 }
