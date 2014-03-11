@@ -9,6 +9,8 @@
 
 html {
 	padding: 0;
+	height: 100%;
+	position: relative;
 }
 
 body {
@@ -16,6 +18,14 @@ body {
 	padding: 0;
 	font-family: 'Clear Sans' !important;
 	color: #878787;
+	height: 100%;
+	position: relative;
+}
+
+.content {
+	min-height: 100%;
+	position: relative;
+	padding-bottom: 5em;
 }
 
 .jumbotron {
@@ -27,7 +37,7 @@ body {
 	margin-top: 60px;
 }
 
-.step-explainer img {
+.step-explainer img, .avatar img {
 	visibility: hidden;
 }
 
@@ -61,8 +71,35 @@ body {
 	background-position: 12px 12px;
 }
 
+.avatar {
+	display: inline-block;
+	border-radius: 125px 20px 10px 30px; 
+	margin-bottom: 10px;
+}
+
+.tanja {
+	background: url(../slike/tanja-bw.jpg) no-repeat;
+}
+
+.tanja:hover {
+	background: url(../slike/tanja.jpeg) no-repeat;
+}
+
+.nebojsa {
+	background: url(../slike/nebojsa-bw.jpg) no-repeat;
+}
+
+.nebojsa:hover {
+	background: url(../slike/nebojsa.jpeg) no-repeat;
+}
+
+
 h2 {
 	color: #AD235E;
+}
+
+h3, h4 {
+	padding-bottom: 20px;
 }
 
 div.container .btn-primary {
@@ -72,10 +109,17 @@ div.container .btn-primary {
 	margin-top: 30px;
 }
 
-.btn-huge {
+div.container .btn-huge {
 	padding: 10px 50px;
 	font-size: 3em;
 	border-radius: 20px;
+	-webkit-box-shadow: 5px 5px #6e898c;
+	-moz-box-shadow: 5px 5px #6e898c;
+	box-shadow: 5px 5px #6e898c;
+}
+
+div.container .btn-primary:hover {
+	background-color: #83a3a7;
 }
 
 .latest-info ul {
@@ -123,4 +167,13 @@ form {
 
 .text-centered {
 	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 5em;
+	background-color: #F8F8F8;
+		
 }
