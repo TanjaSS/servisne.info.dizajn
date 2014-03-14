@@ -37,51 +37,53 @@ a.a-green {
 	margin-top: 60px;
 }
 
-.step-explainer img, .avatar img {
-	visibility: hidden;
-}
-
-.step-1-explainer {
-	background: url(../slike/korak1-bw.jpg) no-repeat;
-}
-
-.step-1-explainer:hover {
-	background: url(../slike/korak1.jpg) no-repeat;
-}
-
-.step-2-explainer {
-	background: url(../slike/korak2-bw.jpg) no-repeat;
-}
-
-.step-2-explainer:hover {
-	background: url(../slike/korak2.jpg) no-repeat;
-}
-
-.step-explainer {
-	padding: 12px;
+.step-wrapper {
+	display: inline-block;
+	padding: 20px;
 	border: 1px solid #b1b1b1;
 	border-radius: 10px;
 	background-color: #ececec;
-	background-position: 12px 12px;
+}
+
+.step-explainer {
+	background: url(../slike/steps.png) no-repeat;
 	display: inline-block;
 }
 
-.step-explainer:hover {
-	background-color: #ececec;
-	background-position: 12px 12px;
+.step-1-explainer {
+	background-position: 0px -245px;
+	width: 350px;
+	height: 235px;
+}
+
+.step-1-explainer:hover {
+	background-position: 0px 0px;
+}
+
+.step-2-explainer {
+	background-position: 0px -832px;
+	width: 350px;
+	height: 332px;
+}
+
+.step-2-explainer:hover {
+	background-position: 0px -490px;
 }
 
 .avatar {
+	background: url(../slike/about.png) no-repeat;
 	display: inline-block;
+	height: 200px;
+	width: 200px;
 }
 
 .tanja {
-	background: url(../slike/tanja-bw.jpg) no-repeat;
+	background-position: 0 -630px;
 	border-radius: 10px 100px 100px 100px; 
 }
 
 .tanja:hover {
-	background: url(../slike/tanja.jpg) no-repeat;
+	background-position: 0 -420px;
 }
 
 .avatar-tanja {
@@ -90,14 +92,13 @@ a.a-green {
 }
 
 .nebojsa {
-	background: url(../slike/nebojsa-bw.jpg) no-repeat;
+	background-position: 0 -210px;
 	border-radius: 100px 10px 100px 100px; 
 }
 
 .nebojsa:hover {
-	background: url(../slike/nebojsa.jpeg) no-repeat;
+	background-position: 0 0;
 }
-
 
 h2 {
 	color: #AD235E;
